@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UrbanBridge — Home</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      color: #0e0e0e; /* NASA Black text */
+      background-color: #ffffff; /* White background */
+    }
+
+    nav {
+      background-color: #0b3d91; /* NASA Blue */
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: #ffffff; /* White links */
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #fc3d21; /* NASA Red hover */
+    }
+
+    .hero {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e9/JewelSingaporeVortex1.jpg');
+      height: 60vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      color: #ffffff;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0,0,0,0.4);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+      color: #fc3d21; /* NASA Red */
+      text-shadow: 0 2px 5px rgba(0,0,0,0.8);
+    }
+
+    .hero p {
+      font-size: 1.5em;
+      margin-top: 10px;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+    }
+
+    main {
+      padding: 80px 20px 20px 20px;
+      max-width: 900px;
+      margin: auto;
+      background: #ffffff;
+      color: #0e0e0e;
+    }
+
+    h2 {
+      color: #0b3d91; /* NASA Blue headings */
+    }
+
+    footer {
+      text-align: center;
+      background: #0e0e0e; /* NASA Black footer */
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    /* Section styling */
+    #fast-growing-city {
+      background-color: #f4f6f8; /* light NASA Gray tone */
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #fast-growing-city h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    #fast-growing-city p {
+      font-size: 16px;
+      color: #34495e;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .city-example {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 40px;
+      gap: 20px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .city-image {
+      width: 250px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .city-description {
+      max-width: 600px;
+    }
+
+    .city-description h3 {
+      margin-top: 0;
+      color: #fc3d21; /* NASA Red headings */
+    }
+
+    .city-description p {
+      line-height: 1.6;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="carlos1.html">Home</a>
+  <a href="about us.html">About Us</a>
+  <a href="carlos2.html">Issues</a>
+  <a href="resources.html">Resources</a>
+  <a href="partners.html">Partners</a>
+  <a href="carlos3.html">Contact</a>
+</nav>
+
+
+  <div class="hero">
+    <div class="hero-content">
+      <h1>UrbanBridge</h1>
+      <p>Turning Satellite Insights into City Solutions</p>
+    </div>
+  </div>
+
+  <main>
+    <section id="fast-growing-city">
+      <h2>What is a Fast-Growing City?</h2>
+      <p>A fast-growing city is one that experiences rapid expansion in population, economy, infrastructure, and technology.</p>
+      <p>This growth is driven by factors such as migration, investments, geography, and government plans.</p>
+      <p>Jakarta, Indonesia’s capital, is a clear example. With over 10 million residents and more than 30 million in its metropolitan area, Jakarta is among the world’s most densely populated cities.</p>
+
+      <div class="city-example">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Jakarta_Skyline.jpg" alt="Jakarta" class="city-image">
+        <div class="city-description">
+          <h3>🇮🇩 Jakarta, Indonesia</h3>
+          <p>Population: 10M+ | Major project: MRT system. Jakarta is Indonesia’s economic hub with massive infrastructure growth.</p>
+        </div>
+      </div>
+
+      <div class="city-example">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Ho_Chi_Minh_City_Skyline.jpg" alt="Ho Chi Minh City" class="city-image">
+        <div class="city-description">
+          <h3>🇻🇳 Ho Chi Minh City, Vietnam</h3>
+          <p>A rapidly growing city due to migration and foreign investment.</p>
+        </div>
+      </div>
+
+      <div class="city-example">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Bangkok_skyline_from_Mahanakhon.jpg" alt="Bangkok" class="city-image">
+        <div class="city-description">
+          <h3>🇹🇭 Bangkok, Thailand</h3>
+          <p>Financial and tourism hub in Southeast Asia.</p>
+        </div>
+      </div>
+
+      <div class="city-example">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Manila_skyline.jpg" alt="Manila" class="city-image">
+        <div class="city-description">
+          <h3>🇵🇭 Manila, Philippines</h3>
+          <p>One of the most densely populated urban areas in the world.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ by UrbanBridge Team</p>
+  </footer>
+</body>
+</html>
